@@ -19,7 +19,7 @@ A minimal, dark-themed typing speed test built with TypeScript and vanilla CSS.
 
 ```bash
 git clone https://github.com/Zidan_1059/writing-speed-tester.git
-cd typing-speed-test
+cd writing-speed-tester
 npm install
 ```
 

@@ -1,0 +1,14 @@
+{
+  "name": "typing-speed-test",
+  "version": "1.0.0",
+  "description": "A minimal, dark-themed typing speed test built with TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc && npx serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeTest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">TypeTest</span>
+          <span class="logo-bracket">]</span>
+        </div>
+        <div class="duration-selector">
+          <button class="duration-btn" data-duration="15">15s</button>
+          <button class="duration-btn" data-duration="30">30s</button>
+          <button class="duration-btn active" data-duration="60">60s</button>
+          <button class="duration-btn" data-duration="120">120s</button>
+        </div>
+      </header>
+
+      <!-- Live Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-label">WPM</span>
+          <span class="stat-value" id="wpm">0</span>
+        </div>
+        <div class="stat timer-stat">
+          <span class="stat-value timer-value" id="timer">60</span>
+          <span class="stat-label">sec</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">ACC</span>
+          <span class="stat-value" id="accuracy">100%</span>
+        </div>
+      </div>
+
+      <!-- Words Display -->
+      <div class="words-wrapper">
+        <div class="words-display" id="words-display"></div>
+        <div class="fade-top"></div>
+        <div class="fade-bottom"></div>
+      </div>
+
+      <!-- Input -->
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="input-field"
+          class="input-field"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="start typing…"
+        />
+      </div>
+
+      <!-- Hint -->
+      <p class="hint"><kbd>Esc</kbd> to restart</p>
+
+      <!-- Result Panel -->
+      <div class="result-panel hidden" id="result-panel">
+        <h2 class="result-title">Results</h2>
+        <div class="result-grid">
+          <div class="result-item">
+            <span class="result-label">WPM</span>
+            <span class="result-number" id="result-wpm">—</span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Raw</span>
+            <span class="result-number" id="result-raw">—</span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Accuracy</span>
+            <span class="result-number" id="result-accuracy">—</span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Errors</span>
+            <span class="result-number" id="result-errors">—</span>
+          </div>
+        </div>
+        <button class="restart-btn" id="restart-btn">Try Again</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

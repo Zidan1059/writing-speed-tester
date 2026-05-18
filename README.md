@@ -18,7 +18,7 @@ A minimal, dark-themed typing speed test built with TypeScript and vanilla CSS.
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/<your-username>/typing-speed-test.git
+git clone https://github.com/Zidan_1059/writing-speed-tester.git
 cd typing-speed-test
 npm install
 ```
@@ -28,8 +28,6 @@ npm install
 ```bash
 npm run build
 ```
-
-This compiles `src/main.ts` → `main.js` in the project root.
 
 ### 3. Run locally
 
@@ -51,18 +49,11 @@ npm run watch
 typing-speed-test/
 ├── index.html      # Markup
 ├── style.css       # All styles
-├── main.js         # Compiled output (committed for GitHub Pages)
-├── src/
-│   └── main.ts     # TypeScript source
+├── main.js         
+├── main.ts     # TypeScript source
 ├── tsconfig.json
 └── package.json
 ```
-
-## Deploy to GitHub Pages
-
-1. Push the repo (including `main.js`) to GitHub.
-2. Go to **Settings → Pages → Source** and select the `main` branch / root.
-3. Done — your test is live at `https://<your-username>.github.io/typing-speed-test/`.
 
 ## License
 

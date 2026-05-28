@@ -1,6 +1,6 @@
 # TypeTest
 
-A minimal, dark-themed typing speed test built with TypeScript and vanilla CSS.
+A minimal, dark-themed typing speed tester built with TypeScript and vanilla CSS.
 
 ## Features
 
